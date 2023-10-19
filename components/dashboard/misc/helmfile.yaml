@@ -1,0 +1,5 @@
+releases:
+  - name: argocd-misc
+    namespace: kubernetes-dashboard
+    chart: ./charts
+    version: 0.1.0
