@@ -1,5 +1,14 @@
 # k8s-sandbox
 
+
+## 📝kindの使い方簡単メモ
+
+マルチノードの起動  
+設定ファイルに細い設定は書いてある
+```
+kind create cluster --config=multinode.yaml
+```
+
 ## todos
 
 やりたいことのメモ
