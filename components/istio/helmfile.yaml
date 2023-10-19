@@ -1,0 +1,20 @@
+repositories:
+  - name: istio
+    url: https://istio-release.storage.googleapis.com/charts
+
+releases:
+  - name: istio-base
+    namespace: istio-system
+    createNamespace: true
+    chart: istio/base
+    values:
+      - defaultRevision: default
+
+  - name: istiod
+    namespace: istio-system
+    createNamespace: true
+    chart: istio/istiod
+    wait: true
+
+# helmfiles:
+#   - ./misc/helmfile.yaml
